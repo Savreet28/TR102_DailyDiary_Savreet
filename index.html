@@ -6,309 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TR-102 Industrial Training Daily Diary — Savreet Kaur</title>
 
-    <style>
-        :root {
-            --primary: #7e22ce;
-            --secondary: #a855f7;
-            --bg: #f9f9fb;
-            --text: #1e1b4b;
-            --muted: #6b7280;
-            --card: #ffffff;
-            --radius: 16px;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background: linear-gradient(135deg, var(--bg), #f5f3ff);
-            color: var(--text);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: 50px auto;
-            padding: 20px;
-        }
-
-        header {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 20px;
-            margin-bottom: 40px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 14px;
-        }
-
-        .logo {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: #fff;
-            padding: 16px 20px;
-            border-radius: var(--radius);
-            font-weight: 700;
-            font-size: 20px;
-        }
-
-        h1 {
-            font-size: 28px;
-            font-weight: 600;
-        }
-
-        .meta {
-            font-size: 14px;
-            color: var(--muted);
-        }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-bottom: 20px;
-        }
-
-        .navlink {
-            padding: 8px 14px;
-            border-radius: 10px;
-            text-decoration: none;
-            color: var(--primary);
-            font-size: 14px;
-            border: 1px solid rgba(126, 34, 206, 0.2);
-            transition: 0.2s;
-        }
-
-        .navlink:hover {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: #fff;
-        }
-
-        section {
-            background: var(--card);
-            border-radius: var(--radius);
-            padding: 24px;
-            margin-bottom: 24px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-            transition: 0.3s;
-        }
-
-        section:hover {
-            transform: translateY(-2px);
-        }
-
-        h2 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            font-weight: 600;
-            color: var(--primary);
-        }
-
-        p {
-            color: var(--muted);
-            font-size: 14px;
-        }
-
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 10px;
-        }
-
-        .skill {
-            background: #f3e8ff;
-            color: var(--primary);
-            padding: 8px 12px;
-            border-radius: 8px;
-            font-size: 13px;
-        }
-
-        .weeks {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px;
-            margin-top: 10px;
-        }
-
-        .week {
-            padding: 16px;
-            border-radius: 12px;
-            background: linear-gradient(180deg, #fff, #f8f5ff);
-            border: 1px solid rgba(126, 34, 206, 0.1);
-        }
-
-        .week h3 {
-            font-size: 16px;
-            margin-bottom: 6px;
-            color: var(--text);
-        }
-
-        .week p {
-            font-size: 13px;
-        }
-
-        .pdf-btn {
-            display: inline-block;
-            margin-top: 8px;
-            font-size: 13px;
-            padding: 8px 12px;
-            border-radius: 8px;
-            text-decoration: none;
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: #fff;
-            transition: 0.2s;
-        }
-
-        .pdf-btn:hover {
-            opacity: 0.85;
-        }
-
-        aside {
-            margin-top: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-            font-size: 14px;
-        }
-
-        td {
-            padding: 6px 0;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        @media(max-width:800px) {
-            header {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        }
-    </style>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="brand">
-                <div class="logo">TR</div>
-                <div>
-                    <h1>TR-102 Industrial Training Daily Diary</h1>
-                    <div class="meta">Trainee: <strong>Savreet Kaur</strong> · URN: 2302668 · 8 Weeks Program</div>
+    <!-- ---------------- HEADER SECTION ---------------- -->
+    <div id="content" class="content-area">
+        <div class="formal-top-header">
+            <div class="header-logos-bar container-fluid">
+                <img src="gne-logo.png" alt="GNDEC Logo" class="header-logo-small">
+                <div class="college-info-text">
+                    <p class="college-title-main">GURU NANAK DEV ENGINEERING COLLEGE, LUDHIANA</p>
+                    <p class="college-subtitle-main">Department of Computer Science & Engineering</p>
                 </div>
+                <img src="auribises.png" alt="Auribises Logo" class="header-logo-small">
             </div>
-        </header>
+        </div>
 
-        <nav>
-            <a class="navlink" href="#overview">Overview</a>
-            <a class="navlink" href="#skills">Skills</a>
-            <a class="navlink" href="#logs">Weekly Logs</a>
-            <a class="navlink" href="#projects">Projects</a>
-            <a class="navlink" href="#mentor">Mentor</a>
-        </nav>
-
-        <section id="overview">
-            <h2>Training Overview</h2>
-            <p>
-                This 8-week industrial training focuses on <strong>Agentic AI with Python</strong> at
-                <strong>Auribises Technologies Pvt. Ltd.</strong>.
-            </p>
-        </section>
-
-        <aside>
-            <section id="mentor">
-                <h2>Trainee Details</h2>
-                <table>
-                    <tr>
-                        <td><strong>URN:</strong></td>
-                        <td>2302668</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Name:</strong></td>
-                        <td>Savreet Kaur</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Organization:</strong></td>
-                        <td>Auribises Technologies Pvt. Ltd.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Mentor:</strong></td>
-                        <td>Mr. Ishant Kumar</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Duration:</strong></td>
-                        <td>8 Weeks (June – August 2025)</td>
-                    </tr>
-                </table>
+        <!-- ---------------- MAIN CONTENT ---------------- -->
+        <main>
+            <section class="intro" id="overview">
+                <p><strong>Trainee:</strong> Savreet Kaur &nbsp; | &nbsp; <strong>URN:</strong> 2302668</p>
+                <p>This 8-week industrial training focuses on <strong>Agentic AI with Python</strong> at
+                    <strong>Auribises Technologies Pvt. Ltd.</strong>
+                </p>
             </section>
-        </aside>
 
-        <section id="logs">
-            <h2>Weekly Logs</h2>
-            <div class="weeks">
-                <div class="week">
+            <section class="recent-entries" id="logs">
+                <h2>Weekly Logs</h2>
+
+                <div class="entry">
                     <h3>Week 1 — Introduction to Python</h3>
                     <p>Basics of Python, data types, loops, and OOP concepts.</p>
                 </div>
-                <div class="week">
+                <div class="entry">
                     <h3>Week 2 — Flask Web Framework</h3>
                     <p>Understanding routing, templates, and form handling with Flask.</p>
                 </div>
-                <div class="week">
+                <div class="entry">
                     <h3>Week 3 — Databases</h3>
                     <p>CRUD operations using MySQL and Flask integration.</p>
                 </div>
-                <div class="week">
+                <div class="entry">
                     <h3>Week 4 — REST APIs</h3>
                     <p>Developed APIs for data handling and integrated authentication.</p>
                 </div>
-                <div class="week">
+                <div class="entry">
                     <h3>Week 5 — AI Integration</h3>
                     <p>Integrated OpenAI API and worked on intelligent chatbot systems.</p>
                 </div>
-                <div class="week">
+                <div class="entry">
                     <h3>Week 6 — Frontend Development</h3>
                     <p>Enhanced UI with HTML, CSS, and JavaScript interactions.</p>
                 </div>
-                <div class="week">
+                <div class="entry">
                     <h3>Week 7 — Project Development</h3>
                     <p>Worked on project planning, development, and debugging.</p>
                 </div>
-                <div class="week">
+                <div class="entry">
                     <h3>Week 8 — Documentation & Deployment</h3>
                     <p>Created project report, hosted website on GitHub Pages.</p>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="week">
-                <h3>Project — ClarifAI</h3>
-                <p>
-                    AI-powered Study Assistant that converts notes into summarized material with
-                    flashcards along with Chatbot.
-                    Built using Streamlit and OpenAI API.
-                </p>
-            </div>
-        </section>
+            <!-- ---------------- CERTIFICATES SECTION ---------------- -->
+            <section class="certificates-section">
+                <h2>Certificates</h2>
+                <div class="certificates-grid">
 
+                    <a href="certificates/completion.pdf" target="_blank" class="certificate-card-link">
+                        <div class="certificate-card">
+                            <div class="card-icon"><i class="fas fa-certificate"></i></div>
+                            <h3 class="card-title">Course Completion Certificate</h3>
+                            <p class="card-subtitle">Official document certifying the successful completion of the
+                                Agentic AI curriculum.</p>
+                            <span class="card-action">View Certificate <i class="fas fa-file-pdf"></i></span>
+                        </div>
+                    </a>
+
+
+                </div>
+            </section>
+
+            <!-- ---------------- PROJECT SECTION ---------------- -->
+            <section id="projects" class="recent-entries">
+                <h2>Project</h2>
+                <div class="entry">
+                    <h3>ClarifAI — AI-Powered Study Assistant</h3>
+                    <p>Converts notes into summarized material with flashcards and provides chatbot interaction.
+                        Built using Streamlit and OpenAI API.</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- ---------------- FOOTER ---------------- -->
         <footer>
             © 2025 TR-102 Daily Diary · Designed by Savreet Kaur
         </footer>
